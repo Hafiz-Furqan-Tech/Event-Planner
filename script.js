@@ -171,12 +171,12 @@ try {
     if (navigator.onLine) {
       if (sessionStorage.getItem("redirectedFromOffline") === "true") {
         sessionStorage.removeItem("redirectedFromOffline");
-        window.location.href = "index.html";
+        // window.location.href = "index.html";
         getAllEvents();
       }
     } else {
       sessionStorage.setItem("redirectedFromOffline", "true");
-      window.location.href = "./Check Internet/index.html";
+      // window.location.href = "./Check Internet/index.html";
     }
   }
   window.addEventListener("online", checkOnlineStatus);
