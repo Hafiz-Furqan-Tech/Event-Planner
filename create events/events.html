@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto p-lg-4">
+      <h1 class="text-3xl font-bold mb-6 text-center">Create New Event</h1>
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <form id="event_form">
+          <!-- event image uploaded -->
+          <div class="mb-4">
+            <label
+              for="eventImage"
+              class="block text-gray-700 text-sm font-bold mb-2"
+              >Event Image</label
+            >
+            <input
+              type="file"
+              id="eventImage"
+              class="w-full px-1 py-2 border rounded-md"
+            />
+          </div>
+
+          <!-- event title -->
+
+          <div class="mb-4">
+            <label
+              for="eventTitle"
+              class="block text-gray-700 text-sm font-bold mb-2"
+              >Event Title</label
+            >
+            <input
+              type="text"
+              id="eventTitle"
+              placeholder="Enter Event Title"
+              class="w-full px-3 py-2 border rounded-md"
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              for="eventTitle"
+              class="block text-gray-700 text-sm font-bold mb-2"
+              >Event Description</label
+            >
+            <textarea
+              type="text"
+              id="eventDesc"
+              placeholder="Enter Event Description"
+              class="w-full px-3 py-2 border rounded-md"
+            ></textarea>
+          </div>
+          <!-- event location -->
+
+          <div class="mb-4">
+            <label
+              for="eventLocation"
+              class="block text-gray-700 text-sm font-bold mb-2"
+              >Event Location</label
+            >
+            <input
+              type="text"
+              id="eventLocation"
+              placeholder="Enter Event Location"
+              class="w-full px-3 py-2 border rounded-md"
+            />
+          </div>
+          <!-- event date -->
+          <div class="mb-4">
+            <label
+              for="eventDate"
+              class="block text-gray-700 text-sm font-bold mb-2"
+              >Event Date</label
+            >
+            <input
+              type="date"
+              id="eventDate"
+              class="w-full px-3 py-2 border rounded-md"
+            />
+          </div>
+          <!-- event time -->
+          <div class="mb-4">
+            <label
+              for="eventTime"
+              class="block text-gray-700 text-sm font-bold mb-2"
+              >Event Time</label
+            >
+            <input
+              type="time"
+              id="eventTime"
+              class="w-full px-3 py-2 border rounded-md"
+            />
+          </div>
+            <div class="flex justify-center mt-4">
+              <button
+              id="btn"
+                type="submit"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-sm w-full sm:w-auto px-5 py-2.5"
+              >
+                Create Event
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="events.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+  </body>
+</html>

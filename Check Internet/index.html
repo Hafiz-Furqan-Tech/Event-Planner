@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        background-color: rgb(61, 57, 57);
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        object-fit: cover;
+      }
+      h2{
+  font-size: 2rem;
+  font-weight: bolder;
+  color: aliceblue;
+  font-family: 'Poppins' , sans-serif;
+  text-align: center;
+      }
+
+      @media screen and (max-width: 500px) {
+        h2 {
+        font-size: 1rem;
+        font-weight: 500;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img src="/images/5977805.png" alt="No Internet" />
+    <h2>You are offline. Please check your internet connection.</h2>
+    <script>
+      function checkOnlineStatus() {
+        if (navigator.onLine) {
+          window.location.href = "../index.html";
+        } else {
+          window.location.href = "index.html";
+        }
+      }
+      window.addEventListener("online", checkOnlineStatus);
+      window.addEventListener("offline", checkOnlineStatus);
+    </script>
+  </body>
+</html>
