@@ -20,20 +20,6 @@ try {
   const eventToast = document.getElementById("LoginToast"); 
   const toastLogoutEl = document.querySelector("#toastLogout");
 
-  // function checkOnlineStatus() {
-  //   if (navigator.onLine) {
-  //     if (sessionStorage.getItem("redirectedFromOffline") === "true") {
-  //       sessionStorage.removeItem("redirectedFromOffline");
-  //       // window.location.href = "index.html";
-  //       getAllEvents();
-  //     }
-  //   } else {
-  //     sessionStorage.setItem("redirectedFromOffline", "true");
-  //     // window.location.href = "./Check Internet/index.html";
-  //   }
-  // }
-  // window.addEventListener("online", checkOnlineStatus);
-  // window.addEventListener("offline", checkOnlineStatus);
 
   onAuthStateChanged(auth, (user) => {
     if (user) {
@@ -163,7 +149,6 @@ try {
     });
   }
 
-  // checkOnlineStatus();
 } catch (error) {
   console.log(error);
 }
