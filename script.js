@@ -75,7 +75,7 @@ try {
         const event = doc.data();
         const { banner, title, date, time, createdByEmail, location, desc } =
           event;
-        const card = `<div class="col-lg-4">
+        const card = `<div class="col-lg-4 col-xl-4 col-xxl-3">
                       <div class="card" id="card">
                         <img src="${banner}" class="card-img-top" alt="Event Image" />
                         <div class="card-body bg-dark text-white">
