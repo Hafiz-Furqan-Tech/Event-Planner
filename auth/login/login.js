@@ -6,15 +6,6 @@ try {
   const btn = document.getElementById("btn");
   const error_msg = document.getElementById("error-msg");
 
-  function checkOnlineStatus() {
-    if (navigator.onLine) {
-      window.location.href = "login.html";
-    } else {
-      window.location.href = "../../index.html";
-    }
-  }
-  window.addEventListener("online", checkOnlineStatus);
-  window.addEventListener("offline", checkOnlineStatus);
   btn.addEventListener("click", (e) => {
     e.preventDefault();
     btn.innerText = "Loading...";
