@@ -13,15 +13,6 @@ try {
   const form = document.getElementById("event_form");
   const btn = document.getElementById("btn");
 
-  function checkOnlineStatus() {
-    if (navigator.onLine) {
-      window.location.href = "events.html";
-    } else {
-      window.location.href = "../index.html";
-    }
-  }
-  window.addEventListener("online", checkOnlineStatus);
-  window.addEventListener("offline", checkOnlineStatus);
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     btn.innerText = "Please wait...";
