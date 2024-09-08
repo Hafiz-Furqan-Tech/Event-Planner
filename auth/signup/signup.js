@@ -13,15 +13,6 @@ try {
   const error_msg = document.getElementById("error-msg");
   const btn = document.querySelector("button[type='submit']");
 
-  function checkOnlineStatus() {
-    if (navigator.onLine) {
-      window.location.href = "signup.html";
-    } else {
-      window.location.href = "../../index.html";
-    }
-  }
-  window.addEventListener("online", checkOnlineStatus);
-  window.addEventListener("offline", checkOnlineStatus);
   const validateForm = () => {
     let isValid = true;
 
